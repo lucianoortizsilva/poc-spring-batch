@@ -1,0 +1,19 @@
+                                                                               
+${AnsiColor.RED}          JJJJJJJJJJJ${AnsiColor.YELLOW}     OOOOOOOOO${AnsiColor.GREEN}     BBBBBBBBBBBBBBBBB${AnsiColor.BLUE}      SSSSSSSSSSSSSSS 
+${AnsiColor.RED}          J:::::::::J${AnsiColor.YELLOW}   OO:::::::::OO${AnsiColor.GREEN}   B::::::::::::::::B${AnsiColor.BLUE}   SS:::::::::::::::S
+${AnsiColor.RED}          J:::::::::J${AnsiColor.YELLOW} OO:::::::::::::OO${AnsiColor.GREEN} B::::::BBBBBB:::::B${AnsiColor.BLUE} S:::::SSSSSS::::::S
+${AnsiColor.RED}          JJ:::::::JJ${AnsiColor.YELLOW}O:::::::OOO:::::::O${AnsiColor.GREEN}BB:::::B     B:::::B${AnsiColor.BLUE}S:::::S     SSSSSSS
+${AnsiColor.RED}            J:::::J${AnsiColor.YELLOW}  O::::::O   O::::::O${AnsiColor.GREEN}  B::::B     B:::::B${AnsiColor.BLUE}S:::::S            
+${AnsiColor.RED}            J:::::J${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B::::B     B:::::B${AnsiColor.BLUE}S:::::S            
+${AnsiColor.RED}            J:::::J${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B::::BBBBBB:::::B${AnsiColor.BLUE}  S::::SSSS         
+${AnsiColor.RED}            J:::::j${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B:::::::::::::BB${AnsiColor.BLUE}    SS::::::SSSSS    
+${AnsiColor.RED}            J:::::J${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B::::BBBBBB:::::B${AnsiColor.BLUE}     SSS::::::::SS  
+${AnsiColor.RED}JJJJJJJ     J:::::J${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B::::B     B:::::B${AnsiColor.BLUE}       SSSSSS::::S 
+${AnsiColor.RED}J:::::J     J:::::J${AnsiColor.YELLOW}  O:::::O     O:::::O${AnsiColor.GREEN}  B::::B     B:::::B${AnsiColor.BLUE}            S:::::S
+${AnsiColor.RED}J::::::J   J::::::J${AnsiColor.YELLOW}  O::::::O   O::::::O${AnsiColor.GREEN}  B::::B     B:::::B${AnsiColor.BLUE}            S:::::S
+${AnsiColor.RED}J:::::::JJJ:::::::J${AnsiColor.YELLOW}  O:::::::OOO:::::::O${AnsiColor.GREEN}BB:::::BBBBBB::::::B${AnsiColor.BLUE}SSSSSSS     S:::::S
+ ${AnsiColor.RED}JJ:::::::::::::JJ${AnsiColor.YELLOW}    OO:::::::::::::OO${AnsiColor.GREEN} B:::::::::::::::::B${AnsiColor.BLUE} S::::::SSSSSS:::::S
+   ${AnsiColor.RED}JJ:::::::::JJ${AnsiColor.YELLOW}        OO:::::::::OO${AnsiColor.GREEN}   B::::::::::::::::B${AnsiColor.BLUE}  S:::::::::::::::SS 
+     ${AnsiColor.RED}JJJJJJJJJ${AnsiColor.YELLOW}            OOOOOOOOO${AnsiColor.GREEN}     BBBBBBBBBBBBBBBBB${AnsiColor.BLUE}    SSSSSSSSSSSSSSS
+     
+${AnsiColor.GREEN}     

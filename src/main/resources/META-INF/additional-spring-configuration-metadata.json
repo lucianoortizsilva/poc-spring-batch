@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "datalake.datasource.jdbcUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'datalake.datasource.jdbcUrl'"
+  },
+  {
+    "name": "datalake.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'datalake.datasource.username'"
+  },
+  {
+    "name": "datalake.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'datalake.datasource.password'"
+  },
+  {
+    "name": "datawarehouse.datasource.jdbcUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'datawarehouse.datasource.jdbcUrl'"
+  },
+  {
+    "name": "datawarehouse.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'datawarehouse.datasource.username'"
+  },
+  {
+    "name": "datawarehouse.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'datawarehouse.datasource.password'"
+  },
+  {
+    "name": "spring.datasource.jdbcUrl",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.datasource.jdbcUrl'"
+  }
+]}
