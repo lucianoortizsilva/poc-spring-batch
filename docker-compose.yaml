@@ -1,7 +1,7 @@
 services:
   
   svc-rabbitmq:
-    image: rabbitmq:3-management
+    image: rabbitmq:3.13.7-management
     container_name: container_rabbitmq
     ports:
       - "5672:5672"
@@ -9,9 +9,20 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: "guest"
       RABBITMQ_DEFAULT_PASS: "guest"
+    networks:
+      - local_network
+  
+  svc-seed:
+    image: curlimages/curl:7.87.0 # imagem leve que tem curl e sh
+    container_name: container_seed
+    depends_on:
+      - svc-rabbitmq
+    entrypoint: ["/bin/sh", "-c", "/scripts/seed-rabbitmq.sh"]
     volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
-          
+      - ./src/main/resources/scripts/seed-rabbitmq.sh:/scripts/seed-rabbitmq.sh:ro
+    networks:
+      - local_network
+        
   svc-datalake-postgre:
     container_name: container-datalake-postgre
     image: postgres:14-alpine    
@@ -59,7 +70,6 @@ volumes:
   datalake_db: {}
   datawarehouse_db: {}
   database_springbatch_db: {}
-  rabbitmq_data: {}
   
 networks:
   local_network: { }

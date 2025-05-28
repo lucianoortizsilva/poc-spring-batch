@@ -1,4 +1,4 @@
-package com.lucianoortizsilva.migration.entrypoint.amqp;
+package com.lucianoortizsilva.migration.entrypoint;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.core.TopicExchange;

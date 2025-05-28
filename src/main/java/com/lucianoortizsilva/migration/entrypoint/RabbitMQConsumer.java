@@ -1,7 +1,10 @@
-package com.lucianoortizsilva.migration.entrypoint.amqp;
+package com.lucianoortizsilva.migration.entrypoint;
 
+import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 import org.springframework.amqp.AmqpIOException;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -69,12 +72,27 @@ public class RabbitMQConsumer {
 	
 	private static void imprimirErrosAoConsumirMensagem(final Exception e) {
 		log.error("Ocorreu erro ao consumir mensagem da fila RabbitMQ.", e);
-		for (final String erro : ExceptionUtil.getErros(e)) {
+		for (final String erro : getErros(e)) {
 			log.error(erro);
 		}
 	}
 	
 	private Payload getPayload(final Message message) throws StreamReadException, DatabindException, IOException {
 		return objectMapper.readValue(message.getBody(), Payload.class);
+	}
+	
+	private static Set<String> getErros(final Exception e) {
+		final Set<String> mensagens = new HashSet<>();
+		Throwable currentException = e;
+		int count = 0;
+		final int maxCausas = 5;
+		while (currentException != null && count < maxCausas) {
+			final String errorMessage = currentException.getMessage();
+			if (isNotEmpty(errorMessage) && mensagens.add(errorMessage)) {
+				count++;
+			}
+			currentException = currentException.getCause();
+		}
+		return mensagens;
 	}
 }

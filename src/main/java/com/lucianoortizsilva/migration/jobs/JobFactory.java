@@ -8,7 +8,7 @@ import org.springframework.batch.core.Job;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
-import com.lucianoortizsilva.migration.entrypoint.amqp.Payload;
+import com.lucianoortizsilva.migration.entrypoint.Payload;
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
 

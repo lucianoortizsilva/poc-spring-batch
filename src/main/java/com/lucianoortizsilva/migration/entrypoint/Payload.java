@@ -1,4 +1,4 @@
-package com.lucianoortizsilva.migration.entrypoint.amqp;
+package com.lucianoortizsilva.migration.entrypoint;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
