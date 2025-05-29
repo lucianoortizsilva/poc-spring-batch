@@ -8,7 +8,7 @@
 
 <br>
 
-## 🎯 What is it ?
+## 🎯 What is this ?
 It is a web project developed with spring batch, with the objective of migrating data from one side to another.
 
 <br>
