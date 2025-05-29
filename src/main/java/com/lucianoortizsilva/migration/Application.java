@@ -1,13 +1,15 @@
 package com.lucianoortizsilva.migration;
 
+import javax.swing.SwingUtilities;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.lucianoortizsilva.migration.ui.UISwing;
 
 @SpringBootApplication
 public class Application {
-
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+	
+	public static void main(final String[] args) {
+		new Thread(() -> SpringApplication.run(Application.class, args)).start();
+		SwingUtilities.invokeLater(() -> new UISwing().setVisible(true));
 	}
-
 }

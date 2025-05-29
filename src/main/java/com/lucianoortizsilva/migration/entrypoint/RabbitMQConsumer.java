@@ -32,7 +32,7 @@ public class RabbitMQConsumer {
 	@Autowired private JobFactory jobFactory;
 	@Autowired private JobLauncher jobLauncher;
 	
-	@RabbitListener(queues = RabbitMQConfig.QUEUE, ackMode = "MANUAL")
+	@RabbitListener(queues = RabbitMQConfig.QUEUE_NAME, ackMode = "MANUAL")
 	public void receiveMessage(final Message message, final Channel channel) {
 		Payload payload = new Payload();
 		try {

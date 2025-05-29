@@ -11,7 +11,7 @@
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
     </root>
-    <logger name="com.lucianoortizsilva.migracao" level="INFO" />
+    <logger name="com.lucianoortizsilva.migration" level="INFO" />
     <logger name="org.postgresql" level="ERROR" />
     
     
