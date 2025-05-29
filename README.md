@@ -9,9 +9,17 @@
 <br>
 
 ## 🎯 What is it ?
-Is a web project development with spring batch, with objective to migrate data of side to other.
+It is a web project developed with spring batch, with the objective of migrating data from one side to another.
 
 <br>
+
+## Architecture and data flux 
+The spring project have an UISwing, responsable by send message to RabbitMQ.
+By other side too had two jobs, that listen an queue from RabbitMQ.
+When anyone job receive an message, this job is started, where do all procecessing of data.
+
+<br>
+
 
 ## 🚀 How to execute the project ?
 
