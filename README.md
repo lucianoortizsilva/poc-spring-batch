@@ -14,9 +14,9 @@ It is a web project developed with spring batch, with the objective of migrating
 <br>
 
 ## 🏗 Architecture and data flux 
-The spring project have an UISwing, responsable by send message to RabbitMQ.\
-By other side too had two jobs, that listen an queue from RabbitMQ.\
-When anyone job receive an message, this job is started, where do all procecessing of data. <br><br>
+This project has an UISwing, responsable by send message to RabbitMQ.\
+By other side too has two jobs, that listen a queue from RabbitMQ.\
+When anyone job receive a message, this job is started, where do all procecessing of data. <br><br>
 ![](https://github.com/lucianoortizsilva/poc-spring-batch/blob/b02f8c8af8063531aa225c2eb1eb98e1677614f4/src/main/resources/static/573px263px_architecture.png?raw=true)
 
 <br>
@@ -29,3 +29,6 @@ When anyone job receive an message, this job is started, where do all procecessi
 - sudo docker-compose up <br><br>
 - mvn clean package <br><br>
 - mvn spring-boot:run <br><br>
+
+Select any job, and send message:<br><br>
+
